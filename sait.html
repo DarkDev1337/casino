@@ -1844,7 +1844,7 @@
         function checkAdminStatus() {
             // Здесь будет проверка из bot.py
             // Например, можно передавать через initDataUnsafe
-            const adminIds = [123456789]; // Замените на ID админов из bot.py
+            const adminIds = [5186843419]; // Замените на ID админов из bot.py
             if (user && adminIds.includes(user.id)) {
                 isAdmin = true;
                 document.getElementById('adminBadge').style.display = 'flex';
@@ -1857,9 +1857,9 @@
             // Здесь будет загрузка с сервера
             // Пока используем тестовые данные
             const testData = {
-                balance: 1000,
-                gamesPlayed: 25,
-                wins: 12,
+                balance: 0
+                gamesPlayed: 0,
+                wins: 0,
                 transactions: [
                     { type: 'win', game: 'Слоты', amount: 500, date: '2024-01-15', icon: '🎰' },
                     { type: 'loss', game: 'Кости', amount: -100, date: '2024-01-14', icon: '🎲' },
@@ -2677,3 +2677,4 @@
     </script>
 </body>
 </html>
+
